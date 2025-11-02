@@ -21,6 +21,7 @@ pip install -r requirements.txt
 - SUPABASE_URL=''
 - SUPABASE_KEY=''
 - APP_SECRET_KEY=''
+- ALLOWED_HOSTS='localhost:8000,127.0.0.1,your-frontend-url'
 
 ## Start the first migration
 At first, create a superuser, (remember the pass you are giving)
@@ -38,3 +39,10 @@ To run the backend server, use the following command:
 ```bash
 python manage.py runserver
 ```
+
+## Access the swagger API docs at
+```bash
+http://127.0.0.1:8000/swagger/
+```
+
+

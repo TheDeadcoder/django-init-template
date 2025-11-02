@@ -65,7 +65,7 @@ def logout(request):
             return JsonResponse({'error': 'Token missing in Authorization header'}, status=400) 
         try:
             response = supabase.auth.sign_out()
-            print("Supabase sign_out response:", response)
+            logger.info(f"Supabase sign_out response: {response}")
         except Exception as e:
             logger.warning(f"Supabase sign_out warning: {str(e)}")
         return JsonResponse({'message': 'Logged out successfully'})

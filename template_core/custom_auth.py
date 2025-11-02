@@ -19,8 +19,6 @@ class SupabaseAuthentication(authentication.BaseAuthentication):
         auth_header = request.META.get('HTTP_AUTHORIZATION', '')
         if not auth_header:
             return None
-        
-        print("In supabase auth", auth_header)
 
         if auth_header.startswith('Bearer '):
             token = auth_header.split(' ')[1]
