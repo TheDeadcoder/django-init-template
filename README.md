@@ -1,9 +1,13 @@
 # Running the Backend
-
+![Django-supabase Logo](https://egtitleeeenycwyhbpik.supabase.co/storage/v1/object/public/statics/django_supabase.png)
 ## Virtual environment
 Make a python virtual environment with the following command:
 ```bash
 python3 -m venv .venv
+```
+Activate the virtual environment
+```bash
+source .venv/bin/activate
 ```
 
 ## Install dependencies
